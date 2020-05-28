@@ -17,7 +17,7 @@ const noPerms = (message, perm) => {
 };
 
 const noBotPerms = (message, perm) => {
-    message.channel.send(`I can't embed links! Make sure I have this permission: \`${permissions[perm]} (${perm})\``).then(msg => msg.delete(5000));
+    message.channel.send(`I don't have permissions to do this! Make sure I have this permission: \`${permissions[perm]} (${perm})\``).then(msg => msg.delete(5000));
 };
 
 module.exports = { 
